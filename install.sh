@@ -31,7 +31,7 @@ yum -y install git make gcc gcc-c++ pkgconfig libstdc++-devel curl curlpp curlpp
 yum -y remove fuse fuse* fuse-devel
  
 $RUNASUSER bash <<EOF
-wget "http://downloads.sourceforge.net/project/fuse/fuse-2.X/2.9.3/fuse-2.9.3.tar.gz?r=&ts=1401776172&use_mirror=ufpr"
+wget "wget http://iweb.dl.sourceforge.net/project/fuse/fuse-2.X/2.9.3/fuse-2.9.3.tar.gz"
 tar -xzf fuse-2.9.3.tar.gz*
 rm -f fuse-2.9.3.tar.gz*
 mv fuse-2.9.3 fuse
