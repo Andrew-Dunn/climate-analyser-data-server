@@ -94,8 +94,8 @@ echo "Sleeping for 20 seconds."
 sleep 20s
 
 ./scripts/configure_thredds.sh
-sleep 2s
+sleep 5s
 ./scripts/stop_tomcat.sh
-sleep 2s
+sleep 5s
 ./scripts/start_tomcat.sh
 EOF
