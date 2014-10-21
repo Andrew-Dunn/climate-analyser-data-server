@@ -89,15 +89,15 @@ chmod +x scripts/unmount_nectar.sh
 ./scripts/mount_nectar.sh
 echo "Data storage has been mounted to '$PWD/datafiles'"
 
-sleep 5s
 echo "Sleeping for 5 seconds."
-./scripts/start_tomcat.sh
-echo "Sleeping for 10 seconds."
 sleep 5s
+./scripts/start_tomcat.sh
+echo "Sleeping for 20 seconds."
+sleep 20s
 
 ./scripts/configure_thredds.sh
-sleep 1s
+sleep 2s
 ./scripts/stop_tomcat.sh
-sleep 1s
+sleep 2s
 ./scripts/start_tomcat.sh
 EOF
